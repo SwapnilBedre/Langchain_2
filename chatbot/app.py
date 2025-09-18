@@ -29,7 +29,7 @@ input_text = st.text_input("search the topic you want")
 
 # Groq LLM
 
-llm = ChatGroq(model="llama-3-70b-instruct")  # for small data,
+llm = ChatGroq(model="llama-3.1-8b-instant")  # for small data,
 
 output_parser = StrOutputParser()
 chain = prompt | llm | output_parser
