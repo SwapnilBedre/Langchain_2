@@ -29,7 +29,7 @@ input_text = st.text_input("search the topic you want")
 
 # ollama LLM
 
-llm = ollama(model="llama2")  # for small data
+llm = ChatGroq(model="llama-3.1-8b-instant")  # not used ollama. 
 
 output_parser = StrOutputParser()
 chain = prompt | llm | output_parser
